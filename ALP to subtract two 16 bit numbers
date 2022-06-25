@@ -1,0 +1,13 @@
+.model small
+.data
+   num dw 711h
+   num2 dw 431h
+   res dw 0
+.code
+   mov ax,@data
+   mov ds,ax
+   mov ax,num
+   sub ax,num2
+   mov res,ax
+ends
+end
