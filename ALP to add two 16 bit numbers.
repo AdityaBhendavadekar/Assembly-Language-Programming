@@ -1,0 +1,13 @@
+.model small
+.data
+   num1 dw 0669h
+   num2 dw 0788h
+   result dw 0
+.code
+   mov ax,@data
+   mov ds,ax
+   mov ax,num1
+   add ax,num2
+   mov result,ax
+ends
+end
