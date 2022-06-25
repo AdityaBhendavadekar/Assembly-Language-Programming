@@ -1,0 +1,13 @@
+.model small
+.data
+   num1 db 9h
+   num2 db 8h
+   result db 0
+.code
+   mov ax,@data
+   mov ds,ax
+   mov al,num1
+   add al,num2
+   mov result,al
+ends
+end
